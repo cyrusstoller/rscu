@@ -12,7 +12,13 @@
  *= require_tree .
 */
 
+
+@import "bootswatch/cerulean/variables";
+
 @import "bootstrap";
+
+
+@import "bootswatch/journal/bootswatch";
 
 body{
 	margin-top: 75px;

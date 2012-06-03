@@ -21,6 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 
   gem 'bootstrap-sass', '~> 2.0.3'
+  gem 'bootswatch-rails'
   gem 'compass'
   gem 'therubyracer'
 end

@@ -2,6 +2,7 @@
 
 body
   background-color: #eee
+  margin-top: 20px
 ul.nav
   padding: 10px 0px
 
@@ -11,11 +12,6 @@ ul.nav
   height: 35px
   font-family: 'Poiret One'
   text-transform: lowercase
-  color: #ddd
-
-.navbar .brand:hover
-  color: #eee
-  -webkit-transition: color .25s ease-in
 
 .navbar-search
   margin-top: 15px
@@ -47,162 +43,48 @@ li.service-name
   line-height: 35px
 
 
-//Gallery
 
-.thumb
-  max-width: 150px
-  min-height: 140px
-
-.thumb-container
-
-  vertical-align: top
-  background-color: #000
-  border: 1px solid #333
-  display: inline-block
-  height: 150px
+button.thoughtbot
+  background-color: #ee432e
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee432e), color-stop(50%, #c63929), color-stop(50%, #b51700), color-stop(100%, #891100))
+  background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  border: 1px solid #951100
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333
+  color: #fff
+  font: bold 20px "helvetica neue", helvetica, arial, sans-serif
+  line-height: 1
+  padding: 12px 0 14px 0
+  text-align: center
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
   width: 150px
-  margin: 4px 2px
-  box-shadow: 0px 1px 1px #333
-
-.modal-gallery
-  width: auto
-  max-height: none
-  .modal-body
-    max-height: none
-  .modal-title
-    display: inline-block
-    max-height: 54px
-    overflow: hidden
-  .modal-image
-    border: 1px solid #000
-    position: relative
-    margin: auto
-    min-width: 128px
-    min-height: 128px
-    overflow: hidden
+  &:hover
+    background-color: #f37873
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f37873), color-stop(50%, #db504d), color-stop(50%, #cb0500), color-stop(100%, #a20601))
+    background-image: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+    background-image: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+    background-image: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+    background-image: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+    background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
     cursor: pointer
-    &:hover
-      &:before
-        content: '‹'
-        position: absolute
-        top: 50%
-        left: 15px
-        width: 40px
-        height: 40px
-        margin-top: -20px
-        font-size: 60px
-        font-weight: 100
-        line-height: 30px
-        color: #ffffff
-        text-align: center
-        background: #222222
-        border: 3px solid #ffffff
-        -webkit-border-radius: 23px
-        -moz-border-radius: 23px
-        border-radius: 23px
-        opacity: 0.5
-        filter: alpha(opacity = 50)
-        z-index: 1
-      &:after
-        content: '‹'
-        position: absolute
-        top: 50%
-        left: 15px
-        width: 40px
-        height: 40px
-        margin-top: -20px
-        font-size: 60px
-        font-weight: 100
-        line-height: 30px
-        color: #ffffff
-        text-align: center
-        background: #222222
-        border: 3px solid #ffffff
-        -webkit-border-radius: 23px
-        -moz-border-radius: 23px
-        border-radius: 23px
-        opacity: 0.5
-        filter: alpha(opacity = 50)
-        z-index: 1
-        content: '›'
-        left: auto
-        right: 15px
+  &:active
+    background-color: #d43c28
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d43c28), color-stop(50%, #ad3224), color-stop(50%, #9c1500), color-stop(100%, #700d00))
+    background-image: -webkit-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+    background-image: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+    background-image: -ms-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+    background-image: -o-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+    background-image: linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
 
-.modal-single .modal-image:hover
-  &:before, &:after
-    display: none
 
-.modal-loading .modal-image
-  background: url(loading.gif) center no-repeat
-
-.modal-gallery
-  &.fade .modal-image
-    -webkit-transition: width 0.15s ease, height 0.15s ease
-    -moz-transition: width 0.15s ease, height 0.15s ease
-    -ms-transition: width 0.15s ease, height 0.15s ease
-    -o-transition: width 0.15s ease, height 0.15s ease
-    transition: width 0.15s ease, height 0.15s ease
-  .modal-image *
-    position: absolute
-    top: 0
-    opacity: 0
-    filter: alpha(opacity = 0)
-  &.fade .modal-image *
-    -webkit-transition: opacity 0.5s linear
-    -moz-transition: opacity 0.5s linear
-    -ms-transition: opacity 0.5s linear
-    -o-transition: opacity 0.5s linear
-    transition: opacity 0.5s linear
-  .modal-image *.in
-    opacity: 1
-    filter: alpha(opacity = 100)
-
-.modal-fullscreen
-  border: none
-  -webkit-border-radius: 0
-  -moz-border-radius: 0
-  border-radius: 0
-  background: transparent
-  overflow: hidden
-  &.modal-loading
-    border: 0
-    -webkit-box-shadow: none
-    -moz-box-shadow: none
-    box-shadow: none
-  .modal-body
-    padding: 0
-  .modal-header
-    position: absolute
-    top: 0
-    right: 0
-    left: 0
-    background: transparent
-    border: 0
-    -webkit-box-shadow: none
-    -moz-box-shadow: none
-    box-shadow: none
-    opacity: 0
-    z-index: 2000
-  .modal-footer
-    position: absolute
-    top: 0
-    right: 0
-    left: 0
-    background: transparent
-    border: 0
-    -webkit-box-shadow: none
-    -moz-box-shadow: none
-    box-shadow: none
-    opacity: 0
-    z-index: 2000
-    top: auto
-    bottom: 0
-  .close, .modal-title
-    color: #fff
-    text-shadow: 0 0 2px rgba(33, 33, 33, 0.8)
-  .modal-header:hover, .modal-footer:hover
-    opacity: 1
-
-@media (max-width:480px)
-  .modal-gallery .btn span
-    display: none
