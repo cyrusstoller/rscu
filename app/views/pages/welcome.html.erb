@@ -1,0 +1,26 @@
+<header class="jumbotron masthead">
+  <div class="inner">
+    <h1>Welcome!</h1>    
+  </div>
+</header>
+
+<p>
+  
+  <% %w[facebook twitter instagram foursquare].each do |service| %>
+  <ul class="services">
+    <li class="service-name">
+      <%= service.capitalize %>
+      <% if @profiles && @profiles[service] %>
+        <div class="service-is-connected">
+          is connected
+          <% @profiles[service] %>
+        </div>
+      <% else %>
+        <div class="service-not-connected">
+        <%= link_to "Connect", "/auth/singly?service=#{service}" %>
+      </div>
+      <% end %>
+    </li>
+  </ul>
+  <% end %>
+</p>
