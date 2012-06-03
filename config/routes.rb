@@ -5,8 +5,6 @@ Rscu::Application.routes.draw do
 
   match '/welcome'  => 'pages#welcome',  :as => "welcome",  :via => :get
   match '/about'    => 'pages#about',    :as => "about",    :via => :get
-  match '/settings' => 'pages#settings', :as => "settings", :via => :get
-  match '/updates'  => 'pages#updates' , :as => "updates"
 
   # singly
   match "auth/:service"          => "auth#service"
