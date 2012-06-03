@@ -20,8 +20,16 @@
 </p>
 
 
-
-
+<% if @updates %>
+<ul>
+  <% @updates.each do |s| %>
+    <li>
+      <div class="name"><%= link_to "Foo Bar", nil %></div>
+      <div class="status">Text me</div>
+    </li>
+  <% end %>
+</ul>
+<% end %>
 
 
 
