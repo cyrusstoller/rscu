@@ -24,8 +24,8 @@
 <ul>
   <% @updates.each do |s| %>
     <li>
-      <div class="name"><%= link_to "Foo Bar", nil %></div>
-      <div class="status">Text me</div>
+      <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+      <div class="status"><%= s["map"]["text"] %></div>
     </li>
   <% end %>
 </ul>
