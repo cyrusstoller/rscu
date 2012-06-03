@@ -9,29 +9,30 @@ trigger_words:
   -  hopeless
   -  sad
   -  disappointed
-  -  disappointing
-  -  tragedy
-  -  inconsolable
-  -  devastated
-  -  anguished
-  -  anguish
-  -  letdown
-  -  undone
   -  depressed
-  -  dismal
-  -  somber
-  -  tragic
-  -  mourning
-  -  tearful
-  -  harrowing
-  -  heart-breaking
-  -  terrible
-  -  crying
-  -  sobbing
-  -  lonely
-  -  abandoned
-  -  abandonment
   -  inadequate
   -  mourn
   -  dejected
   -  suicidal
+
+  # -  disappointing
+  # -  tragedy
+  # -  inconsolable
+  # -  devastated
+  # -  anguished
+  # -  anguish
+  # -  letdown
+  # -  undone
+  # -  dismal
+  # -  somber
+  # -  tragic
+  # -  mourning
+  # -  tearful
+  # -  harrowing
+  # -  heart-breaking
+  # -  terrible
+  # -  crying
+  # -  sobbing
+  # -  lonely
+  # -  abandoned
+  # -  abandonment

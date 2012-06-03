@@ -24,12 +24,14 @@
 
 <ul>
   <% @updates.each do |s| %>
-  <div style="background-color: #fff; border: 1px solid #999; max-width: 100%;" class="well drop-shadow lifted">
-    <li class="people">
-      <div class="status"><%= s["map"]["text"] %></div>
-      <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
-      
-    </li>
+    <div style="background-color: #fff; border: 1px solid #999; max-width: 100%;" class="well drop-shadow lifted">
+      <% begin %>
+      <li class="people">
+        <div class="status"><%= s["map"]["text"] %></div>
+        <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+      </li>
+      <% rescue %>
+      <% end %>
     </div>
   <% end %>
 </ul>
