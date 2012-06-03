@@ -27,11 +27,10 @@ describe PagesController do
     end
   end
   
-  describe "GET 'pictures'" do
+  describe "GET 'updates'" do
     it "returns http success" do
-      session[:access_token] = "foo"
-      get 'pictures'
-      response.should redirect_to root_path
+      get 'updates'
+      response.should be_success
     end
   end
 
