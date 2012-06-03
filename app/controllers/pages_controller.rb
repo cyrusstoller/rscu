@@ -12,6 +12,9 @@ class PagesController < ApplicationController
   end
   
   def updates
+    access_token = session[:access_token]
+    url = APP_CONFIG["singly_api_base"] + "/v0/types/statuses_feed"
+    @updates = HTTParty.get(url, :query => { :access_token => access_token, :q => "sad", :map => true }) if access_token
   end
   
   private
