@@ -4,7 +4,7 @@
     <p>See when your friends are feeling down.
 
 <center>
-<button style="margin-top: 30px; width: 400px; font-size: 40px; display: block;" class="thoughtbot" data-toggle="modal" href="#myModal" >Get started</a>
+<button style="margin-top: 30px; width: 400px; font-size: 26px; display: block;" class="blue-pill" data-toggle="modal" href="#myModal" >Connect</a>
 </center>
     </p>
 
@@ -21,14 +21,19 @@
 
 
 <% if @updates %>
+
 <ul>
   <% @updates.each do |s| %>
-    <li>
-      <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+  <div style="background-color: #fff; border: 1px solid #999; max-width: 100%;" class="well drop-shadow lifted">
+    <li class="people">
       <div class="status"><%= s["map"]["text"] %></div>
+      <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+      
     </li>
+    </div>
   <% end %>
 </ul>
+
 <% end %>
 
 
