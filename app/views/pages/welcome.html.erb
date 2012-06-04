@@ -1,10 +1,10 @@
 <header style="padding-top: 0px;" class="jumbotron masthead">
   <div class="inner">
-    <h1 style="font-size: 50px; text-shadow: 0px 1px 1px #fff">Watch over your network.</h1>    
-    <p>See when your friends are feeling down.
+    <h1 style="font-size: 40px; text-shadow: 0px 1px 1px #fff">Watch over your network.</h1>    
+    <p style="font-size: 25px;">See when your friends are feeling down.
 
 <center>
-<button style="margin-top: 30px; padding: 15px; width: 400px; font-size: 26px; display: block;" class="blue-pill" data-toggle="modal" href="#myModal" >Connect</a>
+<button style="margin-top: 30px; width: 400px; font-size: 26px; display: block;" class="blue-pill" data-toggle="modal" href="#myModal" >Connected</a>
 </center>
     </p>
 
@@ -27,9 +27,17 @@
     <div style="background-color: #fff; border: 1px solid #999; max-width: 100%;" class="well drop-shadow lifted">
       <% begin %>
       <li class="people">
-        <div class="status"><%= s["map"]["text"] %></div>
-        <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+        <table>
+          <tr>
+            <td>
         <div class="profile_image"><%= image_tag s["map"]["author"]["photo"] %></div>
+      </td>
+        <td><div class="status"><%= s["map"]["text"] %></div>
+        
+        <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+        </td>
+        </tr>
+        </table>
       </li>
       <% rescue %>
       <% end %>
@@ -52,7 +60,7 @@
     <li class="service-name">
       <%= service.capitalize %>
       <% if @profiles && @profiles[service] %>
-        <div class="service-is-connected">
+        <div style="color: #fff;" class="service-is-connected">
           is connected
           <% @profiles[service] %>
         </div>
