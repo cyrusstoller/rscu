@@ -35,6 +35,17 @@
         <td><div class="status"><%= s["map"]["text"] %></div>
         
         <div class="name"><%= link_to s["map"]["author"]["name"], s["map"]["author"]["url"] %></div>
+        <div class="timestamp">
+          <% if s["data"]["created_time"] %>
+            <!-- facebook -->
+            <%= time_ago_in_words Time.at(s["data"]["created_time"]) %> ago
+          <% end %>
+          
+          <% if s["data"]["created_at"] %>
+            <!-- twitter -->
+            <%= time_ago_in_words s["data"]["created_at"] %>
+          <% end %>
+        </div>
         </td>
         </tr>
         </table>
